@@ -7,10 +7,12 @@ import javafx.scene.chart.BarChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.TextArea;
 
-public class RecursiveController
-{
+public class RecursiveController {
+
+    @javafx.fxml.FXML
+    private BarChart barChart;
+    private TextArea textArea;
     //Inicializar atributos para los metodos a testear
-    //private domain.Recursive recursive;
     private domain.Recursive recursive;
     private int resultados[];
     private int a[][] = {{3, 5}, {2, 4}, {6, 8}, {3, 6}, {4, 8}, {10, 14}};
@@ -20,12 +22,6 @@ public class RecursiveController
 
     //Metodo para la recoleccion de datos del testeo
     private TestData testData[];
-
-    //Etiqueta para graficos y textArea
-    @javafx.fxml.FXML
-    private TextArea textArea;
-    @javafx.fxml.FXML
-    private BarChart barChart;
 
     //EJECUTAR METODOS PARA EL TESTEO
     @javafx.fxml.FXML
