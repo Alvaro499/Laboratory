@@ -1,18 +1,17 @@
 package controller;
 
+import domain.Recursive;
 import domain.Stopwatch;
 import domain.TestData;
 import javafx.collections.FXCollections;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.TextArea;
-
 public class RecursiveController {
 
     @javafx.fxml.FXML
     private BarChart barChart;
     private TextArea textArea;
-    //Inicializar atributos para los metodos a testear
     private domain.Recursive recursive;
     private int resultados[];
     private int a[][] = {{3, 5}, {2, 4}, {6, 8}, {3, 6}, {4, 8}, {10, 14}};
@@ -20,13 +19,12 @@ public class RecursiveController {
     private String result2 = "ackermanTest test...\n";
     private String result3 = "minimo test... \n";
 
-    //Metodo para la recoleccion de datos del testeo
     private TestData testData[];
 
     //EJECUTAR METODOS PARA EL TESTEO
     @javafx.fxml.FXML
     public void initialize() {
-        //this.recursive = new Recursive();
+        this.recursive = new Recursive();
         this.testData = new TestData[3]; //TestData array
         textArea.setText(mcdTest()+"\n"+ackermanTest()+"\n"+minTest());
 
@@ -94,6 +92,10 @@ public class RecursiveController {
         result3 +="\nTn: "+util.Utility.format(time)+" milliseconds";
         return result3;
     }
+
+
+
+
 
 }
 

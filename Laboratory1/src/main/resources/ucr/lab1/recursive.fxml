@@ -31,7 +31,7 @@
       </BarChart>
       <ScrollPane layoutX="21.0" layoutY="97.0" prefHeight="294.0" prefWidth="710.0">
          <content>
-            <TextArea prefHeight="410.0" prefWidth="735.0" />
+            <TextArea prefHeight="283.0" prefWidth="701.0" />
          </content>
       </ScrollPane>
    </children>
