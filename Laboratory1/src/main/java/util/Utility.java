@@ -37,4 +37,14 @@ public class Utility {
             a[i] = random(99);
         }
     }
+
+    //
+    public static int[] generador(int max,int cant) {
+        int array[] = new int[cant];
+        int tamanho = array.length;
+        for (int i = 0; i < tamanho; i++) {
+            array[i] = (int) (Math.random()*max) ;
+        }
+        return array;
+    }
 }
