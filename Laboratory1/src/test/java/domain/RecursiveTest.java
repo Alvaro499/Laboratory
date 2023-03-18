@@ -34,7 +34,7 @@ public class RecursiveTest {
 
     @org.testng.annotations.Test
     public void ackermanTest(){
-        int a[] = util.Utility.generador(4,6);
+        int a[] = util.Utility.generador(4,16);
         int tamanho = a.length;
         Stopwatch timer = new Stopwatch();
         for(int i = 0; i < tamanho -1; i++) {
@@ -50,7 +50,7 @@ public class RecursiveTest {
 
     @org.testng.annotations.Test
     public void minTest(){
-        int a[] = util.Utility.generador(501,100);
+        int a[] = util.Utility.generador(101,100);
         int tamanho = a.length;
         int count = 0;
         Stopwatch timer = new Stopwatch();

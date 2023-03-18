@@ -71,7 +71,7 @@ public class RecursiveController
 
     public String ackermanTest(){
         result2 = "Ackerman test...";
-        int a[] = util.Utility.generador(4,6);
+        int a[] = util.Utility.generador(4,16);
         int tamanho = a.length;
         Stopwatch timer = new Stopwatch();
         for(int i = 0; i < tamanho -1; i++) {
@@ -85,7 +85,7 @@ public class RecursiveController
 
     public String minTest(){
         result3 = "Min test...";
-        int a[] = util.Utility.generador(501,100);
+        int a[] = util.Utility.generador(101,100);
         int tamanho = a.length;
         int count = 0;
         Stopwatch timer = new Stopwatch();
