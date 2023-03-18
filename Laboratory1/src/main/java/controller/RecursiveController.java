@@ -11,8 +11,9 @@ public class RecursiveController {
 
     @javafx.fxml.FXML
     private BarChart barChart;
+    @javafx.fxml.FXML
     private TextArea textArea;
-    private domain.Recursive recursive;
+    private Recursive recursive;
     private int resultados[];
     private int a[][] = {{3, 5}, {2, 4}, {6, 8}, {3, 6}, {4, 8}, {10, 14}};
     private String result1 = "mcd test...";
@@ -30,6 +31,9 @@ public class RecursiveController {
 
         //BarChart info
         barChartGetData();
+        mcdTest();
+        ackermanTest();
+        minTest();
     }
 
     private void barChartGetData() {
@@ -92,10 +96,6 @@ public class RecursiveController {
         result3 +="\nTn: "+util.Utility.format(time)+" milliseconds";
         return result3;
     }
-
-
-
-
 
 }
 
