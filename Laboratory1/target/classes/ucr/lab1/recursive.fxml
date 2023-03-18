@@ -21,14 +21,18 @@
             </Text>
          </children>
       </Pane>
-      <BarChart fx:id="barChart" layoutX="21.0" layoutY="406.0" prefHeight="274.0" prefWidth="710.0">
-        <xAxis>
-          <CategoryAxis label="Tests" side="BOTTOM" />
-        </xAxis>
-        <yAxis>
-          <NumberAxis label="Millisecods" side="LEFT" />
-        </yAxis>
-      </BarChart>
+      <ScrollPane layoutY="406.0">
+         <content>
+            <BarChart fx:id="barChart" prefHeight="274.0" prefWidth="767.0">
+              <xAxis>
+                <CategoryAxis label="Tests" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Millisecods" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </content>
+      </ScrollPane>
       <ScrollPane layoutX="21.0" layoutY="97.0" prefHeight="294.0" prefWidth="710.0">
          <content>
             <TextArea fx:id="textArea" prefHeight="283.0" prefWidth="701.0" />

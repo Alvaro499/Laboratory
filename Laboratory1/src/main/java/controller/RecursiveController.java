@@ -54,7 +54,6 @@ public class RecursiveController
     }
     public String mcdTest(){
         result1 = "m.c.d test...";
-        result1 = "";
         int fila = a.length;//6
 
         Stopwatch timer = new Stopwatch();
@@ -62,10 +61,10 @@ public class RecursiveController
             result1 += "\nmcd(" + a[i][0] + "," + a[i][1] + ") == " + this.recursive.mcd(a[i][0],a[i][1]);
         }
         double time = timer.elapsedTime();
-        this.testData[0] = new TestData("m.c.d Test", time);
+        this.testData[0] = new TestData("mcd", time);
         //String hhmmss = timer.elapsedTimeHMS();
         //System.out.println(
-        result1 += "\n" + result1 +"\nTn: "+util.Utility.format(time)+" milliseconds\n";
+        result1 += "\nTn: "+util.Utility.format(time)+" milliseconds\n";
         //);
         return result1;
     }
@@ -79,14 +78,14 @@ public class RecursiveController
             result2 += "\n(" + a[i] + ")" + "(" + a[i+1] + ") == " + this.recursive.ackerman(a[i], a[i+1]);
         }
         double time = timer.elapsedTime();
-        this.testData[1] = new TestData("Ackerman Test", time);
-        result2 += "\n" + result2 +"\nTn: "+util.Utility.format(time)+" milliseconds\n";
+        this.testData[1] = new TestData("Ackerman ", time);
+        result2 += "\nTn: "+util.Utility.format(time)+" milliseconds\n";
         return result2;
     }
 
     public String minTest(){
         result3 = "Min test...";
-        int a[] = util.Utility.generador(201,100);
+        int a[] = util.Utility.generador(501,100);
         int tamanho = a.length;
         int count = 0;
         Stopwatch timer = new Stopwatch();
@@ -98,7 +97,7 @@ public class RecursiveController
             }
         }
         double time = timer.elapsedTime();
-        this.testData[2] = new TestData("m.c.d Test", time);
+        this.testData[2] = new TestData("min", time);
         result3 += "\n" + recursive.min(a,0,a[0]);
         result3 +="\nTn: "+util.Utility.format(time)+" milliseconds\n";
         return result3;

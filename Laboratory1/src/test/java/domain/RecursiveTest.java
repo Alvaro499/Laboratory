@@ -50,7 +50,7 @@ public class RecursiveTest {
 
     @org.testng.annotations.Test
     public void minTest(){
-        int a[] = util.Utility.generador(201,100);
+        int a[] = util.Utility.generador(501,100);
         int tamanho = a.length;
         int count = 0;
         Stopwatch timer = new Stopwatch();
@@ -68,14 +68,5 @@ public class RecursiveTest {
                         +"\nTn: "+util.Utility.format(time)+" milliseconds"
         );
     }
-
-//    private int[] generador(int max,int cant) {
-//        int array[] = new int[cant];
-//        int tamanho = array.length;
-//        for (int i = 0; i < tamanho; i++) {
-//            array[i] = (int) (Math.random()*max) ;
-//        }
-//        return array;
-//    }
 
 }
